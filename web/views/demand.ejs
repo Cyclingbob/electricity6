@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>Pizone Grids</title>
+        <link rel="stylesheet" href="/public/styles.css">
+    </head>
+    <body>
+        <header>
+            <nav></nav>
+        </header>
+        <div class="column-container">
+            <div class="inner-content">
+                <h1>Demand | GB Electricity Grid</h1>
+                <div class="meters-container">
+                    <ul>
+                        <li>
+                            <canvas id="frequency-meter"></canvas>
+                            <p>Frequency</p>
+                        </li>
+                        <li>
+                            <canvas id="rsd-meter"></canvas>
+                            <p>Demand (RSD)</p>
+                        </li>
+                        <li>
+                            <canvas id="generation-meter"></canvas>
+                            <p>Generation</p>
+                        </li>
+                        <li>
+                            <canvas id="import-meter"></canvas>
+                            <p>Import</p>
+                        </li>
+                        <li>
+                            <canvas id="export-meter"></canvas>
+                            <p>Export</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <footer>
+            &copyCopyright Pizone 2024
+        </footer>
+        <script src="/public/gauge.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+        <script defer src="/public/meters.js"></script>
+        <script defer src="/public/demand.js"></script>
+    </body>
+</html>

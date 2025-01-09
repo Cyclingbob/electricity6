@@ -1,0 +1,82 @@
+[
+    {
+        "country_1": "Great Britain",
+        "country_2": "France",
+        "api_name": "Eleclink (INTELEC)",
+        "technical_name": "ELEC",
+        "public_name": "Eleclink",
+        "capacity": 1000
+    },
+    {
+        "country_1": "Great Britain",
+        "country_2": "France",
+        "api_name": "France(IFA)",
+        "technical_name": "FR",
+        "public_name": "HVDC Cross Channel (IFA)",
+        "capacity": 2000
+    },
+    {
+        "country_1": "Great Britain",
+        "country_2": "France",
+        "api_name": "IFA2 (INTIFA2)",
+        "technical_name": "IFA2",
+        "public_name": "IFA2",
+        "capacity": 1000
+    },
+    {
+        "country_1": "Great Britain",
+        "country_2": "Ireland",
+        "api_name": "Ireland(East-West)",
+        "technical_name": "EW",
+        "public_name": "East West",
+        "capacity": 530
+    },
+    {
+        "country_1": "Great Britain",
+        "country_2": "Ireland",
+        "api_name": "Ireland (Greenlink)",
+        "technical_name": "GRNL",
+        "public_name": "Greenlink",
+        "capacity": 500
+    },
+    {
+        "country_1": "Great Britain",
+        "country_2": "Northern Ireland",
+        "api_name": "Northern Ireland(Moyle)",
+        "technical_name": "IRL",
+        "public_name": "Moyle",
+        "capacity": 500
+    },
+    {
+        "country_1": "Great Britain",
+        "country_2": "The Netherlands",
+        "api_name": "Netherlands(BritNed)",
+        "technical_name": "NED",
+        "public_name": "BritNed",
+        "capacity": 1000
+    },
+    {
+        "country_1": "Great Britain",
+        "country_2": "Belgium",
+        "api_name": "Belgium (Nemolink)",
+        "technical_name": "NEM",
+        "public_name": "Nemolink",
+        "capacity": 1000
+    },
+    {
+        "country_1": "Great Britain",
+        "country_2": "Norway",
+        "api_name": "North Sea Link (INTNSL)",
+        "technical_name": "NSL",
+        "public_name": "The North Sea Link",
+        "capacity": 1400
+    },
+    {
+        "country_1": "Great Britain",
+        "country_2": "Denmark",
+        "api_name": "Denmark (Viking link)",
+        "technical_name": "VKL",
+        "public_name": "Viking Link",
+        "capacity": 1400
+    }
+]

@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" href="/public/styles.css">
+    </head>
+    <body>
+        <div class="graph">
+            <canvas id="source-chart"></canvas>
+        </div>
+        <%-'<script>'%>
+            let day = <%-JSON.stringify(graph.day)%>;
+        <%-'</script>'%>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+        <script src="/public/source.js"></script>
+    </body>
+</html>

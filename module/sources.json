@@ -1,0 +1,56 @@
+[
+    {
+        "long_name": "Wind",
+        "business_name": "Wind",
+        "current_generation_name": "WIND",
+        "display_name": "Wind"
+    },
+    {
+        "long_name": "Combined Cycle Gas Turbine",
+        "business_name": "Fossil Gas",
+        "current_generation_name": "CCGT",
+        "display_name": "Gas (CCGT)"
+    },
+    {
+        "long_name": "Nuclear",
+        "business_name": "Nuclear",
+        "current_generation_name": "NUCLEAR",
+        "display_name": "Nuclear"
+    },
+    {
+        "long_name": "Biomass",
+        "business_name": "Biomass",
+        "current_generation_name": "BIOMASS",
+        "display_name": "Biomass"
+    },
+    {
+        "long_name": "Pumped Storage",
+        "business_name": "Pumped Storage",
+        "current_generation_name": "PS",
+        "display_name": "Pumped Hydro"
+    },
+    {
+        "long_name": "Hydro run off river",
+        "business_name": "Hydro Run off river",
+        "current_generation_name": "NPSHYD",
+        "display_name": "Hydro"
+    },
+    {
+        "long_name": "Open Cycle Gas Turbine",
+        "business_name": "Fossil Gas",
+        "current_generation_name": "OCGT",
+        "display_name": "Gas (OCGT)"
+    },
+    {
+        "long_name": "Oil",
+        "business_name": "Fossil Oil",
+        "current_generation_name": "OIL",
+        "display_name": "Oil"
+    },
+    {
+        "long_name": "Other generaton",
+        "business_name": "Other",
+        "current_generation_name": "OTHER",
+        "display_name": "Other"
+    }
+]
