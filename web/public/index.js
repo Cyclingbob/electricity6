@@ -1,4 +1,5 @@
 var sourceGauges = new Map()
+var interconnectorGauges = new Map()
 
 window.addEventListener('load', e => {
     document.querySelectorAll('.sources').forEach(canvas => {
@@ -79,15 +80,18 @@ var generation_meter = drawGenerationMeter('generation-meter')
 var interconnector_meter = drawInterconnectorMeter('interconnector-meter')
 var import_meter = drawImportMeter('import-meter')
 var export_meter = drawExportMeter('export-meter')
+var net_meter = drawExportMeter('net-meter')
 
 function refreshSources(){
     fetch("/api/sources").then(res => res.json()).then(data => {
         cache.sources = data.sources
-        console.log(cache.sources)
         document.querySelectorAll('.sources').forEach(canvas => {
             var type = canvas.id.split('-')[0]
+            let actual_value = data.sources[type]
+            if(!actual_value) actual_value = data.sources["INT" + type]
+
             let meter = sourceGauges.get(type)
-            meter.value = data.sources[type].current / 1000
+            meter.value = actual_value.current / 1000
             sourceGauges.set(type, meter)
         })
     })
@@ -107,9 +111,17 @@ function refreshGeneration(){
 
 function refreshInterconnectors(){
     fetch("/api/interconnectors").then(data => data.json()).then(data => {
-        interconnector_meter.value = data.net / 1000
+        interconnector_meter.value = data.import / 1000
         import_meter.value = data.import / 1000
         export_meter.value = data.export / 1000
+        net_meter.value = data.net / 1000
+
+        document.querySelectorAll('.interconnectors').forEach(canvas => {
+            var type = canvas.id.split('-')[0]
+            let meter = interconnectorGauges.get(type)
+            meter.value = data.sources[type].current / 1000
+            interconnectorGaugess.set(type, meter)
+        })
     })
 }
 

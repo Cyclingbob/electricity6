@@ -78,7 +78,8 @@ app.get("/source/:source", async (req, res) => {
 
 app.get("/", (req, res) => {
     res.render(path.join(view_dir, "index.ejs"), {
-        sources: grid.sources
+        sources: grid.sources,
+        interconnectors: grid.interconnectors
     })
 })
 

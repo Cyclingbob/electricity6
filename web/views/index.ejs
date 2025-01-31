@@ -26,12 +26,12 @@
                         </li>
                         <li>
                             <canvas id="interconnector-meter"></canvas>
-                            <p>Interconnectors</p>
+                            <p>Import</p>
                         </li>
                     </ul>
                 </div>
                 <div class="meters-container">
-                    <ul>
+                    <ul>    
                         <li>
                             <canvas id="import-meter"></canvas>
                             <p>Import</p>
@@ -39,6 +39,10 @@
                         <li>
                             <canvas id="export-meter"></canvas>
                             <p>Export</p>
+                        </li>
+                        <li>
+                            <canvas id="net-meter"></canvas>
+                            <p>Net</p>
                         </li>
                     </ul>
                 </div>
@@ -48,6 +52,16 @@
                             <li>
                                 <canvas id="<%= source.current_generation_name %>-meter" class="sources"></canvas>
                                 <p><%= source.display_name %></p>
+                            </li>
+                        <% }); %>
+                    </ul>
+                </div>
+                <div class="meters-container">
+                    <ul>
+                        <% interconnectors.forEach(source => { %>
+                            <li>
+                                <canvas id="<%= source.technical_name %>-meter" class="interconnectors"></canvas>
+                                <p><%= source.public_name %></p>
                             </li>
                         <% }); %>
                     </ul>
